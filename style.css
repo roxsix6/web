@@ -1,0 +1,170 @@
+body {
+  font-family: 'Nanum GothicLight', 'Nanum Gothic', 'Nanum GothicBold', 'Nanum GothicExtraBold';
+  background-color: #262626;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-navbar {
+  height: 43px;
+  background-color: #171717;
+  color: #ffffff;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+custom-navbar ul {
+   list-style: none;        
+   padding-left: 0;         
+   margin: 0;               
+   display: flex;           
+   align-items: center;     
+ }
+
+.custom-navbar:hover {
+  height: 150px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item.dropdown:hover > .nav-link {
+  color: #6E6C5E;
+}
+
+.dropdown-item:hover,
+.lang-item:hover {
+  color: #6E6C5E;
+}
+
+.custom-navbar .dropdown-menu {
+  display: none;
+  float: none;
+  position: absolute;
+  list-style: none;
+  z-index: 1000;
+}
+
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-dropdown .lang-menu {
+  display: none;
+  position: absolute;
+  right: 100%;
+  transform: translateY(-132%);
+  gap: 8px;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.lang-dropdown:hover .lang-menu {
+  display: flex;
+  color: #6E6C5E;
+}
+
+.lang-item, .top-text {
+  color: #ffffff;
+  text-decoration-line: none;
+}
+
+.background-video {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  padding-bottom: 110px;
+}
+
+.foreground-text, .artwak-name {
+   font-style: bold;
+   z-index: 1;
+   color: #ffffff;
+}
+
+.bg-color{
+   background-color: #171717;
+}
+
+.contact-text {
+   font-size: 12px;
+}
+
+html, body {
+   height: 100%;
+   margin: 0;
+ }
+ 
+ .wrapper {
+   min-height: calc(100vh - 100px); 
+ }
+ 
+ .footer, .footer-nav {
+   height: 100px;
+   background-color: #171717;
+   color: white;
+   text-align:left;
+ }
+ .artwak-imege{
+  filter: grayscale(90%);
+  padding-left: 24px;
+  padding-right: 24px;
+ }
+
+ .artwak-imege:hover{
+   filter: grayscale(0%)
+
+ }
+
+ .artwak-name,.atwk-s-imge{
+   padding-left: 24px;
+  padding-right: 24px;
+ }
+
+ .cprt-text{
+   color: #6E6C5E;
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+ }
+
+ #thetoppest {
+   scroll-margin-top: 100px; 
+ }
+
+ .top-text:hover {
+   color: #6E6C5E;
+   text-decoration-line: none;
+ }
+
+ .modal-body img {
+   width: 100%;
+   height: auto;
+   max-height: 90vh; 
+   object-fit: contain; 
+ }
+
+ .kr, .en {
+   color: #6E6C5E;
+ }
